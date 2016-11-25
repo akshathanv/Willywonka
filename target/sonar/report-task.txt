@@ -1,0 +1,5 @@
+projectKey=com.hpe:sam1
+serverUrl=http://localhost:9000
+dashboardUrl=http://localhost:9000/dashboard/index/com.hpe:sam1
+ceTaskId=AVRbaT2nGBl73-uSnucp
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AVRbaT2nGBl73-uSnucp
