@@ -7,6 +7,23 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>sam1 Maven Webapp</name>
   <url>http://maven.apache.org</url>
+  <profiles>
+<!-- better to have keep this sonar profile in your maven settings.xml -->
+        <profile>
+        <id>sonar</id>
+        <activation>
+        <activeByDefault>false</activeByDefault>
+        </activation>
+                <properties>
+                <sonar.host.url>http://16.181.234.223:9009/</sonar.host.url>
+               <!-- <sonar.jdbc.url>jdbc:h2:tcp://localhost:9092/sonar</sonar.jdbc.url> -->
+                <sonar.jdbc.driver>org.h2.Driver</sonar.jdbc.driver>
+
+                <sonar.jdbc.username>sonar</sonar.jdbc.username>
+                <sonar.jdbc.password>sonar</sonar.jdbc.password>
+                </properties>
+        </profile>
+	</profiles>
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -19,3 +36,4 @@
     <finalName>sam1</finalName>
   </build>
 </project>
+
